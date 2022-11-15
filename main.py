@@ -17,7 +17,7 @@ db = TinyDB("data.json")
 
 #
 Input your prompt and we will generate a design for you.
-_Process may take up to 10 seconds_
+_Process may take up to 30 seconds_
 """
 
 instruction = "Realistic architectural rendering of " + st.text_input("Enter your prompt") + ", highly detailed realistic modern Home with a view, Photorealistic, rendered in unreal engine, ultradetail"
@@ -46,9 +46,9 @@ with tab1:
     for i in data['_default']:
         count += 1
 
-    gallery1 = data['_default'][str(count)]['image']
-    gallery2 = data['_default'][str(count-1)]['image']
-    gallery3 = data['_default'][str(count-2)]['image']
+    gallery1 = data['_default'][str(count-1)]['image']
+    gallery2 = data['_default'][str(count-2)]['image']
+    gallery3 = data['_default'][str(count-3git )]['image']
     st.image(gallery1, caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
     st.image(gallery2, caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
     st.image(gallery3, caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
