@@ -12,12 +12,12 @@ configure()
 db = TinyDB("data.json")
 
 """
-# AI Interior Designer
-In the form, you will inout an instruction and we will generate an image for you.
+# Welcome to AI Architect
+Input your prompt  and we will generate an image for you.
 _We don't sell this data_
 """
 
-instruction = st.text_input("Enter your instruction")
+instruction = st.text_input("Enter your instruction") + "Residential home high end futuristic, award winning photography, minimalist modern designs::1 high end indoor/outdoor residential living space, rendered in vray, rendered in octane, rendered in unreal engine, architectural photography, photorealism, featured in dezeen"
 
 if st.button('Generate'):
     model = replicate.models.get("stability-ai/stable-diffusion")
