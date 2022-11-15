@@ -48,7 +48,7 @@ with tab1:
 
     gallery1 = data['_default'][str(count-1)]['image']
     gallery2 = data['_default'][str(count-2)]['image']
-    gallery3 = data['_default'][str(count-3git )]['image']
+    gallery3 = data['_default'][str(count-3)]['image']
     st.image(gallery1, caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
     st.image(gallery2, caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
     st.image(gallery3, caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
