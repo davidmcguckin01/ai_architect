@@ -5,6 +5,15 @@ from tinydb import TinyDB
 from dotenv import load_dotenv
 import json
 
+hide_menu_style = """
+        <style>
+        #MainMenu {visibility: hidden;}
+        </style>
+        """
+
+st.markdown(hide_menu_style, unsafe_allow_html=True)
+
+
 def configure():
     load_dotenv()
 
