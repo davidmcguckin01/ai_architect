@@ -17,7 +17,9 @@ Input your prompt and we will generate a design for you.
 _Process may take up to 10 seconds_
 """
 
-instruction = st.text_input("Enter your instruction") + "Residential home high end futuristic, hyperdetailed, contrast, realistic, ultradetailed, cinematic 8k, architectural rendering, volumetric light"
+instruction = "Realistic architectural rendering of " + st.text_input("Enter your instruction") + ", highly detailed realistic modern Home with a view, Photorealistic, rendered in unreal engine, ultradetail"
+
+print(instruction)
 
 if st.button('Generate'):
     model = replicate.models.get("stability-ai/stable-diffusion")
