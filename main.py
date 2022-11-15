@@ -65,17 +65,26 @@ with tab1:
 with tab2:
     """
     #### How to write great prompts
-    - Item 1
-    - Item 2
-    - Item 3
+    - Be As Specific as You Can 
+    - Name Specific Art Styles or Mediums -> “acrylic painting”
+    - Name Specific Artists ie. “by (Artist Name)” 
+    - Weight Your Keywords ie. “cute, grey cat” -> “[cute],((grey cat)).”
+    - Tweak Other Important Settings such as CFG, Sampling Method and Sampling Steps
 
-    #### Here are some cool words to use in your prompt
-    - Item 1
-    - Item 2
-    - Item 3
+    #### Cool words to use in your prompt
+    - 50mm
+    - 35mm
+    - cinematic lighting
+    - award winning photo,
+    - ultrarealistic
+    - unreal engine
+    - rendered in vray
+
+    #### Words to influence your architectural design
+    - 
     """
 
 with tab3:
     """
-    ## this is tab 2
+    ## _Coming soon_
     """
