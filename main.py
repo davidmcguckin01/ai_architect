@@ -2,6 +2,12 @@ import os
 import replicate
 import streamlit as st
 from tinydb import TinyDB
+from dotenv import load_dotenv
+
+def configure():
+    load_dotenv()
+
+configure()
 
 db = TinyDB("data.json")
 
